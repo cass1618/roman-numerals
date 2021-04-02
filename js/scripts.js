@@ -6,9 +6,10 @@ function convertToRoman(userNumber) {
 
   } else if ((userNumber > 0)&&(userNumber < 4000)&&(Number.isInteger(userNumber))) {
    
-  const digitArray = userNumber.toString().split('');  
+  const digitArray = userNumber.toString().split('');
+  const numDigits = digitArray.length;  
 
-  const onesPlace = ['I','II','I','IV','V','VI','VII','VIII','IX'];
+  const onesPlace = ['I','II','III','IV','V','VI','VII','VIII','IX'];
   const tensPlace = ['X','XX','XXX','XL','L','LX','LXX','LXXX','XC'];
   const hunsPlace = ['C','CC','CCC','CD','D','DC','DCC','DCCC','CM'];
   const thosPlace = ['M','MM','MMM']
@@ -25,3 +26,15 @@ function convertToRoman(userNumber) {
     }
   }
 
+// function convertToNumber(userRoman) {
+    
+//   let letterArray = userRoman.split('');
+//   let romOneArray = [];
+//   letterArray.forEach(function(letter) {
+//     if (letter===M) {
+//       romOneArray.push(letter);
+//     }
+//   }
+//   )
+
+// }
